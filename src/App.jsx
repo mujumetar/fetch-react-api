@@ -9,9 +9,10 @@ function App() {
 
 
   function Fetchapi() {
-    fetch(`https://randomuser.me/api?results=${count}`)
+    fetch(`https://randomuser.me/api/?results=500&nat=in&?gender=male`)
       .then((res) => res.json())
-      .then((res) => setData(res.results))
+      .then((res) => setData(res.results),
+    console.log(data))
   }
 
   useEffect(() => {

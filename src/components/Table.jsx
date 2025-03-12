@@ -4,7 +4,7 @@ export const Table = ({ data }) => {
     return (
         <>
 
-            <div className="container row g-3">
+            <div className="container row g-3 my-5 mx-auto">
                 {
                     data.map((ele) => (
                         <div className="col-3" >
